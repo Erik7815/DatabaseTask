@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    internal class Cell
+    public class Cell
     {
         [Key]
         public int CellId { get; set; }
