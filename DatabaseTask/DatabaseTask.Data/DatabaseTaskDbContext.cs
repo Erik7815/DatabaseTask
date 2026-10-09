@@ -11,10 +11,16 @@ namespace DatabaseTask.Data
 
         // näide, kuidas teha, kui lisate domaini alla ühe objekti
         // migratsioonid peavad tulema siia libary-sse e TARge20.Data alla.
-        public DbSet<Prison> Prisons { get; set; }
-        public DbSet<Block> Blocks { get; set; }
-        public DbSet<Cell> Cells { get; set; }
-        public DbSet<Prisoner> Prisoners { get; set; }
-        public DbSet<Crime> Crimes { get; set; }
+        public DbSet<Analysis> analyses { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Medicine> Medicines { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
+        public DbSet<Results> results { get; set; }
+        public DbSet<Treatment> Treatments { get; set; }
+        public DbSet<Ward> Wards { get; set; }
+        public DbSet<Visit> Visits { get; set; }
+        
     }
 }

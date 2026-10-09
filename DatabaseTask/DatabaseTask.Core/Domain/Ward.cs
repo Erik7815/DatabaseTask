@@ -9,14 +9,13 @@ using DatabaseTask.Core.Domain;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Block 
+    public class Ward 
     {
         [Key]
-        public int BlockId { get; set; }
-        public string Name { get; set; }
-        public int BlockNumber { get; set; }
-        public int SecurityLevel { get; set; }
-        public ICollection<Prison> Prisons { get; set; } = new List<Prison>();
+        public Guid Id { get; set; }
+        public int WardNr { get; set; }
+        public int Floor { get; set; }
+        public int Beds { get; set; }
 
     }
 }
